@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moïse ZAPATER - Carte de visite</title>
+  <meta name="description" content="Carte de visite numérique de Moïse ZAPATER, CTO chez Berger-Levrault." />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card-bg: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --primary: #1f4ed8;
+      --primary-dark: #183baa;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 45%, #ffffff 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card-bg);
+      border-radius: 28px;
+      box-shadow: 0 20px 50px rgba(31, 41, 55, 0.12);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .hero {
+      padding: 32px 24px 24px;
+      text-align: center;
+      background: radial-gradient(circle at top, #dbeafe 0%, #ffffff 58%);
+    }
+
+    .photo {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffffff;
+      box-shadow: 0 12px 30px rgba(31, 41, 55, 0.18);
+      background: #e5e7eb;
+    }
+
+    h1 {
+      margin: 18px 0 6px;
+      font-size: 28px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .title {
+      margin: 0;
+      color: var(--primary);
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .company {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .content {
+      padding: 8px 24px 28px;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 12px;
+      margin: 20px 0 24px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fbfdff;
+    }
+
+    .icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eef2ff;
+      color: var(--primary);
+      flex: 0 0 auto;
+      font-size: 18px;
+    }
+
+    .label {
+      margin: 0 0 2px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    .value {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 54px;
+      border-radius: 18px;
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 800;
+      box-shadow: 0 12px 26px rgba(31, 78, 216, 0.28);
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .button:active {
+      transform: scale(0.98);
+      background: var(--primary-dark);
+    }
+
+    .hint {
+      margin: 14px 0 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" aria-label="Carte de visite numérique">
+    <section class="hero">
+      <img class="photo" src="static/photo.jpg" alt="Photo de Moïse ZAPATER" />
+      <h1>Moïse ZAPATER</h1>
+      <p class="title">CTO</p>
+      <p class="company">Berger-Levrault</p>
+    </section>
+
+    <section class="content">
+      <div class="info-list">
+        <a class="info-item" href="mailto:moise.zapater@berger-levrault.com">
+          <span class="icon" aria-hidden="true">✉</span>
+          <span>
+            <p class="label">Email</p>
+            <p class="value">moise.zapater@berger-levrault.com</p>
+          </span>
+        </a>
+
+        <a class="info-item" href="tel:+33613139234">
+          <span class="icon" aria-hidden="true">☎</span>
+          <span>
+            <p class="label">Téléphone</p>
+            <p class="value">+33 6 13 13 92 34</p>
+          </span>
+        </a>
+
+        <a class="info-item" href="https://www.linkedin.com/in/moise-zapater" target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">in</span>
+          <span>
+            <p class="label">LinkedIn</p>
+            <p class="value">linkedin.com/in/moise-zapater</p>
+          </span>
+        </a>
+      </div>
+
+      <a class="button" href="contact.vcf" download="moise-zapater.vcf">
+        Télécharger la carte de contact
+      </a>
+
+      <p class="hint">
+        Sur iPhone ou Android, ouvrez le fichier téléchargé pour ajouter le contact à votre carnet d’adresses.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
