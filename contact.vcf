@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Zapater;Moïse;;;
+FN:Moïse Zapater
+ORG:Berger-Levrault
+TITLE:CTO
+EMAIL;TYPE=WORK:moise[.zapater@berger-levrault.com](mailto:.zapater@berger-levrault.com)
+TEL;TYPE=CELL:+33613139234
+URL:https://www.linkedin.com/in/moise-zapater
+NOTE:CTO chez Berger-Levrault
+REV:20260616T000000Z
+END:VCARD
